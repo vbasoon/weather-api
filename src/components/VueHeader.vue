@@ -1,19 +1,27 @@
 <template>
-    <header>
-        <div class="header-container">
-            <div class="logo-container">
-                <a @click="goToMain" href="#">Mini Weather App</a>
-            </div>
-            <nav>
-              <div class="nav-menu">
-                <a @click="goToMain" href="#">Main</a>
-                <a @click="goToAbout" href="#">About</a>
-              </div>  
-            </nav>
-        </div>
-    </header>
-    
-  </template>
+  <header>
+    <div class="header-container">
+      <div class="logo-container">
+        <a
+          href="#"
+          @click="goToMain"
+        >Mini Weather App</a>
+      </div>
+      <nav>
+        <div class="nav-menu">
+          <a
+            href="#"
+            @click="goToMain"
+          >Main</a>
+          <a
+            href="#"
+            @click="goToAbout"
+          >About</a>
+        </div>  
+      </nav>
+    </div>
+  </header>
+</template>
   
   <script>
   import {defineComponent} from 'vue'
@@ -24,7 +32,7 @@
         const router = useRouter()
 
         const goToMain = () => {
-            router.push({name: "Name"})
+            router.push({name: "Main"})
         }
 
         const goToAbout = () => {
@@ -46,6 +54,7 @@
   }
 
   .header-container {
+    
     display: grid;
     grid-template-columns: repeat(2, auto);
     align-items: center;

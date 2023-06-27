@@ -1,15 +1,18 @@
 <template>
-    <h1>Main Page</h1>
-    
-  </template>
+  <Weather />
+</template>
   
   <script>
   import {defineComponent} from 'vue'
+  import Weather from "@/components/Weather.vue"
   
   export default defineComponent({
+    components: {Weather},
     setup(){
   
-      return{}
+      return{
+        Weather
+      }
     }
   })
   </script>
